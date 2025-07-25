@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筆記使用</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 8px 12px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #f2f2f2;
+            border: 2px solid #333;
+        }
+
+        tfoot {
+            background-color: #fafafa;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">姓名</th>
+                <th colspan="3">成績</th>
+            </tr>
+            <tr>
+                <th>國文</th>
+                <th>英文</th>
+                <th>數學</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>小明</td>
+                <td>85</td>
+                <td>90</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>小華</td>
+                <td>88</td>
+                <td>92</td>
+                <td>81</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>平均</td>
+                <td>86.5</td>
+                <td>91</td>
+                <td>79.5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table>
+        <tr>
+            <td rowspan="2">姓名</td>
+            <td colspan="3">成績</td>
+        </tr>
+        <tr>
+            <td>td</td>
+            <td>td</td>
+        </tr>
+    </table>
+</body>
+
+</html>

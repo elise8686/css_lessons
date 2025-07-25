@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偽元素練習</title>
+    <style>
+        h1::before {
+            content: "I am";
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+            display: block;
+
+        }
+
+        h1::after {
+            content: "DOG";
+            width: 100px;
+            height: 100px;
+            display: block;
+            background-color: lawngreen;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        p::first-letter {
+            font-size: 40px;
+        }
+
+        p::selection {
+            background-color: aqua;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>happy</h1>
+    <p>美國總統川普陸續公布各國關稅稅率，15日除了和印尼達成貿易協議後，川普還透露將對非洲、加勒比海等國家設定同一種關稅稅率，約為「略超過10％」
+
+        根據《美聯社》報導，川普15日向記者表示，他計畫會對加勒比海地區以及非洲等較小國家設定同一種關稅，稅率可能會是「超過10%一點點」，而且對象至少會涵蓋100個國家。</p>
+</body>
+
+</html>

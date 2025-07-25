@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偽元素畫icon</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        .menu {
+            width: 3rem;
+            height: 3rem;
+            background-color: gray;
+            border: 1rem solid black;
+            position: relative;
+        }
+
+        .menu::after {
+            content: "";
+            position: absolute;
+            /* background-color: whitesmoke; */
+            width: 2rem;
+            height: 0.2rem;
+            left: calc((100% - 2rem)/2);
+            top: calc((100% - 1rem)/2);
+            border-top: 0.6rem double white;
+            border-bottom: 0.2rem solid white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu"></div>
+</body>
+
+</html>

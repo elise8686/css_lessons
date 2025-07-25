@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume content</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #About,
+        #Skills,
+        #Photo {
+            padding: 50px 0px;
+        }
+
+        .container,
+        .shortcut,
+        .photo-list {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+
+        }
+
+        .description,
+        .my-photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .my-photo {
+            width: 48%;
+            height: 500px;
+            background-color: rgb(157, 99, 211);
+        }
+
+        .description {
+            width: 48%;
+            height: 500px;
+            background-color: rgb(121, 183, 228);
+        }
+
+        .photo-list {
+            flex-wrap: wrap;
+        }
+
+        .shortcut li {
+            width: 31%;
+            height: 300px;
+            background-color: rgb(206, 255, 126)
+        }
+
+        .photo-list li {
+            width: 31%;
+            height: 150px;
+            background-color: rgb(255, 183, 151);
+            /* display: flex; */
+            margin-bottom: 30px;
+        }
+
+        .photo-list li:nth-child(even) {
+            background-color: aquamarine;
+        }
+
+        footer {
+            background-color: black;
+            height: 50px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        /* 手機 */
+        @media screen and (max-width: 500px) {
+
+            .container,
+            .shortcut,
+            .photo-list {
+                flex-wrap: wrap;
+            }
+
+            .my-photo,
+            .description,
+            .shortcut li {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .photo-list li {
+                width: 48%;
+            }
+
+            .photo-list li:nth-child(3) {
+                order: 2
+            }
+
+            .photo-list li:nth-child(4) {
+                order: 1
+            }
+
+            .photo-list li:nth-child(5) {
+                order: 3
+            }
+
+            .photo-list li:nth-child(6) {
+                order: 4
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <section id="Banner"></section>
+    <section id="About">
+        <div class="container">
+            <div class="my-photo">Photo</div>
+            <div class="description">Description</div>
+        </div>
+    </section>
+    <section id="Skill">
+        <ul class="shortcut">
+            <li>skill1</li>
+            <li>skill2</li>
+            <li>skill3</li>
+        </ul>
+    </section>
+    <section id="Photo">
+        <ul class="photo-list">
+            <li>圖</li>
+            <li>文</li>
+            <li>圖</li>
+            <li>文</li>
+            <li>圖</li>
+            <li>文</li>
+        </ul>
+    </section>
+    <footer>
+        <p>Copyright&copy;2023 I'm footer</p>
+    </footer>
+</body>
+
+
+</html>

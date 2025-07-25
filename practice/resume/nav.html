@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD主導覽練習檔</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mukta:wght@300&display=swap');
+
+        /* font-family: 'Mukta', sans-serif; 
+            font-family: 'Dosis';
+        */
+        /* 電腦與平板上應用的樣式 */
+        body {
+            background-color: rgb(237, 237, 237);
+            margin: 0px;
+            font-size: 14px;
+        }
+
+        header {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 100px;
+            /* height: 60px; */
+            background-color: rgb(161, 205, 255);
+            font-size: 28px;
+            font-family: "Dosis", 'mukta';
+            text-align: center;
+            line-height: 60px;
+            padding: 10px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: rgb(0, 63, 136);
+            font-weight: 800;
+        }
+
+
+        .menu-item {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            height: 100%;
+        }
+
+        .menu-item li {
+            display: flex;
+            align-items: stretch;
+            height: 100%;
+            /* background-color: rgb(217, 235, 255); */
+        }
+
+        .menu-item li a {
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'mukta';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            color: rgb(27, 105, 195);
+            background-color: rgb(217, 235, 255)
+        }
+
+        .menu-item li a:hover {
+            background-color: rgb(255, 182, 94);
+            color: white
+        }
+
+        /* 以下是icon */
+        .menu {
+            width: 3rem;
+            height: 3rem;
+            background-color: gray;
+            border: 0.4rem solid black;
+            position: relative;
+            display: flex;
+        }
+
+        .menu::after {
+            content: "";
+            position: absolute;
+            /* background-color: whitesmoke; */
+            width: 2rem;
+            height: 0.2rem;
+            left: calc((100% - 2rem)/2);
+            top: calc((100% - 1rem)/2);
+            border-top: 0.6rem double white;
+            border-bottom: 0.2rem solid white;
+
+        }
+
+        /* 手機 */
+        @media screen and (max-width: 500px) {
+            header {
+                flex-wrap: wrap;
+            }
+
+
+
+            .menu-item {
+                flex-direction: column
+            }
+
+
+
+
+            .menu-item,
+            .menu-item li,
+            .menu-item li a,
+            .navbar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="">logologo</a></div>
+        <div class="menu"></div>
+        <nav class="navbar">
+            <ul class="menu-item">
+                <li><a href="">About</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Protfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

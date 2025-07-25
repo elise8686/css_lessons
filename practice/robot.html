@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用背景屬性畫機器人</title>
+    <style>
+        .robot {
+            width: 500px;
+            height: 400px;
+            background: #fbffdb;
+            position: relative
+        }
+
+        .eyes1 {
+            width: 30px;
+            height: 30px;
+            background: black;
+            left: 100px;
+            top: 100px;
+            position: absolute;
+        }
+
+        .eyes2 {
+            width: 30px;
+            height: 30px;
+            background: rgb(117, 117, 117);
+            right: 100px;
+            top: 100px;
+            position: absolute;
+        }
+
+        .mouth {
+            width: 100px;
+            height: 100px;
+            background: red;
+            left: 200px;
+            bottom: 100px;
+            position: absolute;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="robot">
+        <div class="eyes1"></div>
+        <div class="eyes2"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+
+</html>

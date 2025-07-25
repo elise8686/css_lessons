@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex練習</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            width: 70%;
+            height: 200px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .container:nth-child(2) {
+            background-color: cornflowerblue;
+        }
+
+        .box {
+            width: 300px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+
+        .box:nth-child(2) {
+            background-color: cadetblue;
+        }
+
+        .box:nth-child(3) {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="container"></div>
+</body>
+
+</html>
