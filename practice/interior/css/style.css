@@ -62,6 +62,53 @@
 }
 
 /* ======================
+        costumer 
+========================*/
+
+
+#Customer .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#Customer img {
+    margin: auto;
+}
+
+/* =====================
+      Testimonials
+========================*/
+
+#Testimonials h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+#Testimonials .container {
+    background-color: #F4F0EC;
+    border-radius: 70px;
+}
+
+#Testimonials .card-list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#Testimonials img {
+    width: 77px;
+    height: 77PX;
+    border-radius: 50px;
+}
+
+#Testimonials .picname {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* ======================
           NEWS
 ====================== */
 
@@ -183,6 +230,12 @@
         margin: 5%;
     }
 
+    .hero-title {
+        font-size: 2.8rem;
+        /* 介於手機(2.375rem)和電腦(3.5rem)之間 */
+        line-height: 1.2;
+    }
+
     .container {
         width: 90%;
     }
@@ -199,7 +252,7 @@
 }
 
 /* 電腦 */
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 1366px) {
     #Banner {
         height: 800px;
         background: url('../images/Banner.jpg') no-repeat;
@@ -208,6 +261,15 @@
 
     #Banner .container {
         width: 40%;
+    }
+
+    #Customer img {
+        width: 18%;
+        padding: 5px;
+    }
+
+    .container {
+        width: 60%;
     }
 
     .hero-title {
