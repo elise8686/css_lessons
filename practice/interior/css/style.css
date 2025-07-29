@@ -7,6 +7,25 @@
     box-sizing: border-box;
 }
 
+section {
+    padding-top: 80px;
+}
+
+h1,
+h2,
+h3 {
+    color: #292f36;
+    font-family: "DM Serif Display", serif;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+p {
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+}
+
 #Banner {
     padding: 66px 30px;
     width: 100%;
@@ -65,15 +84,18 @@
         costumer 
 ========================*/
 
-
 #Customer .container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 2.5rem;
 }
 
 #Customer img {
     margin: auto;
+    width: 51%;
+
+
 }
 
 /* =====================
@@ -81,9 +103,9 @@
 ========================*/
 
 #Testimonials h2 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     text-align: center;
-    line-height: 2rem;
+    /* line-height: 2rem; */
 }
 
 #Testimonials .container {
@@ -94,8 +116,12 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 2.5rem 0rem;
-    font-size: 1.25rem;
+    font-size: .875rem;
 
+}
+
+#Testimonials .name {
+    font-size: 1.125rem;
 }
 
 #Testimonials .card-list {
@@ -112,8 +138,8 @@
     background-color: #FFFFFF;
     border-radius: 20px;
     width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
 
@@ -127,10 +153,15 @@
 
 #Testimonials .picname {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 1.5625rem;
     margin-bottom: 1.25rem;
+}
+
+#Testimonials p {
+    text-align: center;
 }
 
 .name-lineheight {
@@ -139,27 +170,63 @@
     flex-direction: column;
 }
 
+/* =====================
+      Project
+========================*/
+
+.pro-article-item {
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in;
+}
+
+.pro-picframe {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.pro-article-item:nth-child(1) .pro-picframe {
+    border-top-right-radius: 45px;
+}
+
+.pro-article-item:nth-child(2) .pro-picframe {
+    border-top-left-radius: 45px;
+}
+
+.pro-article-item:nth-child(3) .pro-picframe {
+    border-bottom-right-radius: 45px;
+}
+
+.pro-article-item:nth-child(4) .pro-picframe {
+    border-bottom-left-radius: 45px;
+}
+
+.pro-link-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* ======================
           NEWS
 ====================== */
-
-.title-group {
-    text-align: center;
-}
 
 .section-title {
     font-size: 1.5rem;
     font-family: "DM Serif Display", serif;
     padding-bottom: .75rem;
     letter-spacing: .075rem;
+    text-align: center;
 }
 
 .sub-title {
-    width: 46%;
+    /* width: 46%; */
     margin: auto;
     font-size: 1.25rem;
     padding-bottom: 3.25rem;
-    letter-spacing: .075rem;
+    text-align: center;
 }
 
 /* card */
@@ -245,21 +312,6 @@
 
 /* 平板 */
 @media screen and (min-width: 481px) {
-    #Banner {
-        height: 400px;
-        background: url('../images/tablet/Banner.png') no-repeat;
-        justify-content: flex-start;
-        border-bottom-left-radius: 150px;
-        background-position: right bottom;
-        background-size: cover;
-
-    }
-
-    #Banner .container {
-        background-color: transparent;
-        width: 60%;
-        margin: 5%;
-    }
 
     .hero-title {
         font-size: 2.8rem;
@@ -281,44 +333,66 @@
         width: 48%;
     }
 
+    .sub-title {
+        width: 46%;
+
+    }
+
+    /* Banner */
+    #Banner {
+        height: 400px;
+        background: url('../images/tablet/Banner.png') no-repeat;
+        justify-content: flex-start;
+        border-bottom-left-radius: 150px;
+        background-position: right bottom;
+        background-size: cover;
+
+    }
+
+    #Banner .container {
+        background-color: transparent;
+        width: 60%;
+        margin: 5%;
+    }
+
     /* Customer */
     #Customer .container {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     #Customer img {
         margin: auto;
+        width: 12.5%;
     }
 
     /* Testimonials */
     #Testimonials h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
-        line-height: 5rem;
+        line-height: 3.5rem;
+    }
+
+    #Testimonials .card-list {
+        flex-wrap: nowrap;
+    }
+
+    /* Project */
+    .pro-article-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .pro-article-item {
+        width: 48%;
     }
 }
 
 /* 電腦 */
 @media screen and (min-width: 1366px) {
-    #Banner {
-        height: 800px;
-        background: url('../images/Banner.jpg') no-repeat;
-        background-size: 100% auto;
-    }
-
-    #Banner .container {
-        width: 40%;
-    }
-
-    #Customer img {
-        width: 18%;
-        padding: 5px;
-    }
 
     .container {
-        width: 60%;
+        width: 80%;
     }
 
     .hero-title {
@@ -343,5 +417,44 @@
 
     .read:hover {
         background-color: #ffffff;
+    }
+
+    /* Banner */
+    #Banner {
+        height: 800px;
+        background: url('../images/Banner.jpg') no-repeat;
+        background-size: 100% auto;
+    }
+
+    #Banner .container {
+        width: 40%;
+    }
+
+    /* Customer */
+    #Customer img {
+        padding: 5px;
+    }
+
+    /* Testimonials */
+    #Testimonials .picname {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5625rem;
+        margin-bottom: 1.25rem;
+    }
+
+    #Testimonials .picname {
+        text-align: start;
+    }
+
+    #Testimonials p {
+        text-align: start;
+    }
+
+
+    #Testimonials h2 {
+        font-size: 3rem;
+        line-height: 5rem;
     }
 }
