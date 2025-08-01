@@ -231,7 +231,11 @@ header a {
 }
 
 .cama-pic img {
-    box-shadow: -15px 15px 0px rgb(255, 184, 96)
+    box-shadow: -15px 15px 0px rgb(255, 184, 96);
+    max-width: 700px;
+    height: 100%;
+    overflow: hidden;
+
 }
 
 #About .description {
@@ -456,7 +460,7 @@ li:nth-child(5) .skill-level {
 }
 
 .card:nth-child(6) img {
-    object-position: center 10%;
+    object-position: center 15%;
 }
 
 .card:nth-child(7) img {
@@ -468,7 +472,7 @@ li:nth-child(5) .skill-level {
 }
 
 .card:nth-child(10) img {
-    object-position: center 30%
+    object-position: center 20%
 }
 
 .card:nth-child(3) {
@@ -674,6 +678,8 @@ footer p {
         flex-direction: column;
 
     }
+
+
 
     .cama-pic img {
         max-width: 100%;
